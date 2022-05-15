@@ -10,3 +10,5 @@ export const request = async (url) => {
 
   return await res.json();
 };
+
+export const fetchProducts = async () => request(`${API_END_POINT}/products`);
