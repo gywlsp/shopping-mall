@@ -12,3 +12,6 @@ export const request = async (url) => {
 };
 
 export const fetchProducts = async () => request(`${API_END_POINT}/products`);
+
+export const fetchProduct = async (productId) =>
+  request(`${API_END_POINT}/products/${productId}`);
